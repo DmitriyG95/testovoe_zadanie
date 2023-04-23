@@ -283,6 +283,12 @@ html,body {
             z-index: 2;
         }
     }
+    @media (min-width:1024px) and (max-width:1600px) {
+        &__fast-view {
+            font-size: 10px;
+            line-height: 12px; 
+        }
+    }
     @media (max-width:$xl) {
         &__icons {
             top:-4px;
@@ -326,16 +332,15 @@ html,body {
             margin-bottom:12px;
         }
     }
+    
+        
+
     @media (max-width:$lg) {
         padding:8px;
         &__stickers {
             margin-bottom:12px;
         }
-        &__sticker {
-            font-size: 8px;
-            line-height: 12px;
-            
-        }
+        
         &__prices {
             display: flex;
             flex-flow: column-reverse;
@@ -349,8 +354,6 @@ html,body {
             -webkit-box-orient: vertical;  
             margin-bottom:12px;
         }
-    }
-    @media (max-width:$lg) {
         &__img {
             padding-bottom:150px;
         }
@@ -366,6 +369,9 @@ html,body {
             font-size: 8px;
             line-height: 12px;
             padding:2px 4px;
+        }
+        &__fast-view {
+            display: none;
         }
     }
 }
